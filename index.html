@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | GitHub Pages</title>
+    <style>
+        :root {
+            --primary-color: #2d3748;
+            --secondary-color: #4a5568;
+            --accent-color: #3182ce;
+            --text-color: #1a202c;
+            --bg-color: #f7fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 1rem 0 0.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 2rem 0;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .project-links a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .project-links a:hover {
+            background-color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="https://placehold.co/300x300" alt="Professional headshot portrait of me smiling with a blurred office background" />
+                <h1>My Name</h1>
+                <p>Web Developer | Designer | Creator</p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                    <a href="mailto:youremail@example.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I'm a passionate developer who loves creating beautiful, functional websites and applications. Here you'll find some of my recent projects.</p>
+        </section>
+
+        <section>
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400" alt="Screenshot of e-commerce website with product listings in a grid layout" />
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Store</h3>
+                        <p>A fully responsive online store built with React and Node.js featuring shopping cart functionality and payment processing.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">View Demo</a>
+                            <a href="#" target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400" alt="Weather application interface showing forecast data with clean modern UI design" />
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather App</h3>
+                        <p>Real-time weather application using a public API that displays current conditions and 5-day forecast for any location.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">View Demo</a>
+                            <a href="#" target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400" alt="Task management dashboard with drag and drop interface and priority color coding" />
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Manager</h3>
+                        <p>Productivity application for organizing tasks with drag-and-drop functionality and priority tagging.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">View Demo</a>
+                            <a href="#" target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div id="skills-container">
+                <!-- JavaScript will populate skills here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // List of skills
+        const skills = [
+            'HTML5', 'CSS3', 'JavaScript', 'React',
+            'Node.js', 'Git', 'Responsive Design',
+            'UI/UX', 'Python', 'SQL'
+        ];
+
+        // Function to create skill elements
+        function populateSkills() {
+            const container = document.getElementById('skills-container');
+            skills.forEach(skill => {
+                const skillElement = document.createElement('span');
+                skillElement.textContent = skill;
+                skillElement.style.display = 'inline-block';
+                skillElement.style.margin = '0.5rem';
+                skillElement.style.padding = '0.5rem 1rem';
+                skillElement.style.backgroundColor = '#e2e8f0';
+                skillElement.style.borderRadius = '20px';
+                container.appendChild(skillElement);
+            });
+        }
+
+        // Call the function when page loads
+        window.addEventListener('DOMContentLoaded', populateSkills);
+    </script>
+</body>
+</html>
+
