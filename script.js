@@ -5,8 +5,7 @@ document.getElementById('current-year').textContent = new Date().getFullYear();
 const skills = [
     'HTML', 'CSS', 'JavaScript',
     'C++', 'Python', 'Java', 'SQL',
-    'Autodesk Maya', 'Autodesk Inventor',
-
+    'Autodesk Maya', 'Autodesk Inventor'
 ];
 
 // Function to create skill elements
