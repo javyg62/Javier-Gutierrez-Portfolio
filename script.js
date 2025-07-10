@@ -3,10 +3,10 @@ document.getElementById('current-year').textContent = new Date().getFullYear();
 
 // List of skills
 const skills = [
-    'HTML', 'CSS', 'JavaScript', 'React', 'Node.js',
-    'C++', 'Python', 'Java', 'SQL', 'Git',
-    'Microsoft Suite', 'Autodesk Maya', 'Autodesk Inventor',
-    'Problem Solving', 'Teamwork', 'Communication'
+    'HTML', 'CSS', 'JavaScript',
+    'C++', 'Python', 'Java', 'SQL',
+    'Autodesk Maya', 'Autodesk Inventor',
+
 ];
 
 // Function to create skill elements
