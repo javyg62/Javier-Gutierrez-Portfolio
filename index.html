@@ -4,160 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio | GitHub Pages</title>
-    <style>
-        :root {
-            --primary-color: #2d3748;
-            --secondary-color: #4a5568;
-            --accent-color: #3182ce;
-            --text-color: #1a202c;
-            --bg-color: #f7fafc;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
-
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            margin: 1rem 0 0.5rem;
-        }
-
-        .social-links {
-            display: flex;
-            font-size: 20px;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: var(--accent-color);
-        }
-
-        section {
-            padding: 2rem 0;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .project-card {
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-image img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .project-content {
-            padding: 1rem;
-        }
-
-        .project-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .project-links a {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: var(--accent-color);
-            color: white;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-
-        .project-links a:hover {
-            background-color: var(--primary-color);
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-            margin-top: 2rem;
-        }
-
-        @media (max-width: 768px) {
-            .projects {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
             <div class="profile">
                 <img src="https://github.com/javyg62/Javier-Gutierrez-Portfolio/blob/main/images/img1.jpg?raw=true"
                 alt="Professional headshot portrait of me smiling with a blurred office background" />
                 <h1>Javier Gutierrez</h1>
                 <p style="font-size: 20px;">Web Developer | Designer | Coder</p>
                 <div class="social-links">
-                    <a href="https://github.com/javyg62" target="_blank">GitHub</a>
-                    <a href="mailto:09gutierrez.javier@gmail.com">Email</a>
+                    <a href="https://github.com/javyg62" target="_blank" aria-label="GitHub Profile">GitHub</a>
+                    <a href="mailto:09gutierrez.javier@gmail.com" aria-label="Email Javier Gutierrez">Email</a>
                 </div>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section>
+        <section id="about">
             <h2>About Me</h2>
             <p style="font-size: 20px;"> Welcome to my portfolio! I am a results driven professional with a solid
                background in computer engineering and proven experience in both technical and leadership roles.
@@ -167,7 +41,7 @@
                 environments where innovation and collaboration are key.</p>
         </section>
 
-        <section>
+        <section id="projects">
             <h2>My Projects</h2>
             <div class="projects">
                 <div class="project-card">
@@ -179,8 +53,8 @@
                         <p>A small pokemon battle using C++ to demonstrates a solid understanding of C++ fundamentals,
                           including object-oriented programming concepts like inheritance and polymorphism.</p>
                         <div class="project-links">
-                            <a href="https://github.com/javyg62/Pokemon-Battle/tree/main" target="_blank">View Demo</a>
-                            <a href="https://github.com/javyg62/Pokemon-Battle/blob/cd2e9c0c14e34199db41b74428882563ba2aed55/main.cpp" target="_blank">Source Code</a>
+                            <a href="https://github.com/javyg62/Pokemon-Battle/tree/main" target="_blank" aria-label="View Demo of Pokemon Battle">View Demo</a>
+                            <a href="https://github.com/javyg62/Pokemon-Battle/blob/cd2e9c0c14e34199db41b74428882563ba2aed55/main.cpp" target="_blank" aria-label="View Source Code of Pokemon Battle">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -193,8 +67,8 @@
                         <h3>Weather Website App</h3>
                         <p> A weather dashboard application built using React and Convex, which provides real-time weather updates and email subscriptions for weather reports.</p>
                         <div class="project-links">
-                            <a href="https://admired-stingray-683.convex.app/" target="_blank">View Demo</a>
-                            <a href="https://github.com/javyg62/Weather-Website/tree/main" target="_blank">Source Code</a>
+                            <a href="https://admired-stingray-683.convex.app/" target="_blank" aria-label="View Demo of Weather Website App">View Demo</a>
+                            <a href="https://github.com/javyg62/Weather-Website/tree/main" target="_blank" aria-label="View Source Code of Weather Website App">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -208,18 +82,27 @@
                         <p>This project allows users to discover their zodiac sign, personality traits, and celestial insights based on their birth date. The application
                           features a visually appealing design with a starry background and interactive elements.</p>
                         <div class="project-links">
-                            <a href="https://javyg62.github.io/Cosmic-Zodiac/" target="_blank">View Demo</a>
-                            <a href="https://github.com/javyg62/Cosmic-Zodiac" target="_blank">Source Code</a>
+                            <a href="https://javyg62.github.io/Cosmic-Zodiac/" target="_blank" aria-label="View Demo of Cosmic Zodiac">View Demo</a>
+                            <a href="https://github.com/javyg62/Cosmic-Zodiac" target="_blank" aria-label="View Source Code of Cosmic Zodiac">Source Code</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
-            <div id="skills-container">
+            <div id="skills-container" class="skills-grid">
                 <!-- JavaScript will populate skills here -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me via email or connect with me on GitHub.</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:09gutierrez.javier@gmail.com">09gutierrez.javier@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/javyg62" target="_blank">javyg62</a></p>
             </div>
         </section>
     </main>
@@ -228,35 +111,6 @@
         <p>&copy; <span id="current-year"></span> My Portfolio. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // List of skills
-        const skills = [
-            'HTML', 'C++', 'JavaScript',
-            'Microsoft Suite',
-            'Python', 'Autodesk Maya',
-             'Autodesk Inventor'
-        ];
-
-        // Function to create skill elements
-        function populateSkills() {
-            const container = document.getElementById('skills-container');
-            skills.forEach(skill => {
-                const skillElement = document.createElement('span');
-                skillElement.textContent = skill;
-                skillElement.style.display = 'inline-block';
-                skillElement.style.margin = '0.5rem';
-                skillElement.style.padding = '0.5rem 1rem';
-                skillElement.style.backgroundColor = '#e2e8f0';
-                skillElement.style.borderRadius = '20px';
-                container.appendChild(skillElement);
-            });
-        }
-
-        // Call the function when page loads
-        window.addEventListener('DOMContentLoaded', populateSkills);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
