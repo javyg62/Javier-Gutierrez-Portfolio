@@ -14,10 +14,13 @@ function populateSkills() {
     skills.forEach(skill => {
         const skillElement = document.createElement('span');
         skillElement.textContent = skill;
-        skillElement.classList.add('skill-tag'); // Add a class for styling
+        skillElement.style.display = 'inline-block';
+        skillElement.style.margin = '0.5rem';
+        skillElement.style.padding = '0.5rem 1rem';
+        skillElement.style.backgroundColor = '#e2e8f0';
+        skillElement.style.borderRadius = '20px';
         container.appendChild(skillElement);
     });
 }
-
 // Call the function when page loads
 window.addEventListener('DOMContentLoaded', populateSkills);
